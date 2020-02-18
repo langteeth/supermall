@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* tabbar相关 的样式 */
+#top .tabbar {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#top .tabbar .category {
+    position: relative;
+    float: left;
+    width: 164px;
+    background: linear-gradient(90deg, #f00,#ff3264);
+    color: #fff;
+    font-size: 15px;
+}
+
+#top .tabbar .category .lineicon {
+    margin-left: 20px;
+}
+
+#top .tabbar .category span {
+    margin-left: 20px;
+}
+
+#top .tabbar .categories {
+    position: absolute;
+    /* z-index 属性指定一个元素的堆叠顺序。 */
+    z-index: 1;
+
+    width: 164px;
+    background: linear-gradient(90deg,red,#ff3264);
+}
+
+#top .tabbar .categories li {
+    height:42px ;  
+    padding: 0 3px 0 2px;
+}
+
+#top .tabbar .categories li a:hover {
+    background-color: #fff;
+}
+#top .tabbar .categories li a:hover img{
+    display: none;
+}
+
+#top .tabbar .categories li a:hover img.active {
+    display: inline;
+}
+
+#top .tabbar .categories li a:hover span {
+    color:#ff1e32;  
+    
+}
+ 
+#top .tabbar .categories li img {
+    position: relative;
+    top: -2px; 
+    margin-left: 18px;
+}
+
+#top .tabbar .categories li span {
+    color: #fff;
+}
+
+#top .tabbar .categories li img.active{
+    display: none;
+}
+
+
+#top .tabbar .categories li a {
+    display: block;
+    height: 41px;
+    line-height: 41px;
+    border-top: 1px solid #ff5160;
+}
+
+#top .tabbar .categories li a:hover span {
+    background-color: #fff;
+}
+
+#top .tabbar .list {
+    float: left;
+    margin-left: 16px;
+}
+
+#top .tabbar .list li {
+    float: left;
+    margin-left: 10px;
+}
+
+#top .tabbar .list a {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#top .tabbar .list a:hover {
+    color: #ff1e32;
+}
+
+#top .tabbar .list a:active {
+    color: #ff1e32;
+}
+
+/* 轮播图的相关样式 */
+#top .banner {
+    position: relative;
+    overflow: hidden;
+    min-width: 1100px;
+}
+
+#top .banner .swiper img {
+    position: relative;
+    z-index: -9;
+    /* 1.向左边移动自己的一半 */
+    transform: translate(-50%,0);
+   /* 2.回退父元素的一半 */ 
+    right: -50%;
+    /* left:50%; */
+}
+
+/* 轮播图下面的服务相关样式 */
+#top .banner .service {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    /* margin-left: 0; */
+    /* width:100%; */
+    height: 45px;
+    overflow: hidden;
+    /* background:  center top url("./img/banner.jpg"); */
+}
+
+#top .banner .service .blur {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background:url("./img/banner.jpg") center bottom;
+    filter:blur(8px) ;
+}
+
+#top .banner .service ul {
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+}
+
+#top .banner .service ul li {
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 30px;
+
+}
+
